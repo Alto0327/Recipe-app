@@ -9,9 +9,8 @@ function Header() {
   return (
     <>
       <nav>
-        <ul id="nav-links">
-          <div>
-            <li>
+        <ul className="nav-links">
+          <li>
             <img src={Logo} alt="" />
           </li>
           <li>
@@ -20,16 +19,14 @@ function Header() {
           <li>
             <img src={Search} alt="" />
           </li>
-        </div>
-        <div>
-
+        </ul>
+        <ul className="nav-links">
           <li>
             <img src={Linkedin} alt="" />
           </li>
           <li>
             <img src={GithubIcon} alt="" />
           </li>
-        </div>
         </ul>
       </nav>
     </>
