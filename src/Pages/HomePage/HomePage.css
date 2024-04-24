@@ -1,0 +1,16 @@
+.rightSide-img{
+    position: absolute; 
+    right: 0;
+    top: 20rem;
+}
+
+.Welcome-page{
+    height: 100vh;
+}
+
+.scrolling-recipes{
+    background-color: #111111;
+    border-radius: 25px;
+    width: 975px;
+    height: 1065px;
+}
