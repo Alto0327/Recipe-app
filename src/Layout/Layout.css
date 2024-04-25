@@ -7,10 +7,40 @@ nav {
     border-color: rgba(152,152,152,0.5);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+
 
 }
 
-.nav-links{
-    display: inline;
+.nav-links ul:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100px;
+    margin-bottom: 25rem;
+
+}
+
+.nav-links li{
+    width:25px;
+    display: flex;
+}
+
+.Icons{
+    height: 2.5rem;
+}
+.Logo{
+    height: auto;
+    width: 8rem;
+    margin-bottom: -1rem;
+}
+
+
+.nav-links li {
+    padding-bottom: 24px;
+}
+
+.nav-links li:last-child {
+    padding-bottom: 0px;
 }

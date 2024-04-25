@@ -9,25 +9,27 @@ function Header() {
   return (
     <>
       <nav>
-        <ul className="nav-links">
+        <img src={Logo} alt="" className="Logo"/>
+        <div className="nav-links">
+        <ul className="navTop">
           <li>
-            <img src={Logo} alt="" />
           </li>
           <li>
-            <img src={Home} alt="" />
+            <img src={Home} alt=""  className="Icons" />
           </li>
           <li>
-            <img src={Search} alt="" />
-          </li>
-        </ul>
-        <ul className="nav-links">
-          <li>
-            <img src={Linkedin} alt="" />
-          </li>
-          <li>
-            <img src={GithubIcon} alt="" />
+            <img src={Search} alt="" className="Icons" />
           </li>
         </ul>
+        <ul className="navBottom">
+          <li>
+            <img src={Linkedin} alt=""  className="Icons"/>
+          </li>
+          <li>
+            <img src={GithubIcon} alt="" className="Icons" />
+          </li>
+        </ul>
+        </div>
       </nav>
     </>
   );
