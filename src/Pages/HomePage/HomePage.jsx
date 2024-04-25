@@ -1,6 +1,7 @@
 import "./HomePage.css";
 import  WholePie from "./HomePageAssests/WholePie.png"
 import pieslice from "./HomePageAssests/slice_of_pie.png";
+import RecipeSearch from "../../RecipeSearch"
 
 
 function HomePage(){
@@ -10,8 +11,8 @@ function HomePage(){
             <div className="TitleCard">
             <h1>Cook Like a chef in your own Kicthen</h1>
             <h3>Tell us what's in your fridge and we'll do the rest</h3>
-            <div className="searchBar">
-                <h3>Ex: Apple, Flour, garlic</h3>
+            <div >
+                <RecipeSearch/>
             </div>
             <h5>Already know what to make? Search for the recipe here</h5>
             </div>
@@ -26,7 +27,7 @@ function HomePage(){
                     <h1>A Recipe for every</h1>
                     <h1>Preference and skill level</h1>
                 </div>
-                    
+
                     <h5 className="Scroll-Footer">Already Know what to make? Click here</h5>
             </div>
             <img src={pieslice} alt="Pie slice" className="LeftsidePie" />

@@ -1,20 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter,Routes, Route } from 'react-router-dom'
 import './App.css'
 import  Header from "./Layout/Header"
 import HomePage from './Pages/HomePage/HomePage'
 import Footer from './Layout/Footer'
+import SearchPage from './Pages/Search Recipie/SearchPage'
+import Results from './Pages/Search Recipie/Results'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
+    <BrowserRouter>
     <div className="gradient-background">
       <Header/>
-      <HomePage/>
+      <Routes>
+        <Route index element={<HomePage/>} />
+        <Route path='/Home' element={<HomePage/>} />
+        <Route path='/Search' element={<SearchPage/>} />
+        <Route path='/results' element={<Results/>} />
+      </Routes>
       <Footer/>
     </div>
+    </BrowserRouter>
   )
 }
 
