@@ -23,7 +23,7 @@ nav {
 }
 
 .nav-links li{
-    width:25px;
+    padding-left: 0.5rem;
     display: flex;
 }
 
@@ -43,4 +43,14 @@ nav {
 
 .nav-links li:last-child {
     padding-bottom: 0px;
+}
+
+
+/*-------------FOOOTER-------------*/
+
+.Footer{
+    border-top: 1px solid;
+    border-color: rgba(152,152,152,0.5);
+    margin-top: 5rem;
+    color: rgba(152,152,152,0.5);
 }

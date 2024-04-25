@@ -2,6 +2,7 @@
     position: absolute; 
     right: 0;
     top: 20rem;
+    z-index: 3;
 }
 
 .Welcome-page{
@@ -27,6 +28,10 @@
     font-size: 48px;
 }
 
+.TitleCard h5{
+    padding-left: 1rem;
+}
+
 .searchBar{
     margin-top: 2rem;
     background-color: #A8A8A8;
@@ -42,4 +47,41 @@
 
 .searchBar h3 {
     padding-left: 1.2rem;
+}
+
+
+/*------------ Scrolling section --------------------*/
+.scrolling-recipes{
+    position: relative;
+    z-index: 1;
+
+}
+.scroll-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2rem;
+    color: #A8A8A8;
+}
+
+.scroll-header h1{
+    font-size: 42px;
+    margin-bottom: -2rem;
+}
+
+.scroll-header h3{
+    margin-bottom: -2rem;
+}
+
+.LeftsidePie{
+    position: absolute;
+    left: 140px;
+    top: 90rem;
+    z-index: 2;
+}
+
+.Scroll-Footer{
+    position: absolute;
+    bottom: 0;
+    right: 23rem;
 }
