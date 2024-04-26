@@ -28,6 +28,21 @@ function HomePage() {
 
     fetchRandomRecipes();
   }, []);
+
+
+    // Use a utility function to duplicate recipe cards for continuous scrolling
+    useEffect(() => {
+        const duplicateCards = () => {
+          const container = document.getElementById('recipesContainer');
+          if (!container) return; // Ensure the container exists before proceeding
+      
+          const cards = container.getElementsByClassName('recipe-card');
+          const clone = [...cards].map(card => card.cloneNode(true));
+          clone.forEach(card => container.appendChild(card));
+        };
+      
+        duplicateCards();
+      }, [randomRecipes]);
   return (
     <>
       <div className="Welcome-page">
@@ -51,7 +66,8 @@ function HomePage() {
     <h1>A Recipe for every</h1>
     <h1>Preference and skill level</h1>
   </div>
-  <div className="recipes-container">
+  <div className="recipes-container-right">
+  <div>
     {randomRecipes.map(recipe => (
       <div key={recipe.id} className="recipe-card">
         <a href={recipe.sourceUrl} target="_blank">
@@ -62,7 +78,7 @@ function HomePage() {
       </div>
     ))}
   </div>
-  <div className="recipes-container">
+  <div>
     {randomRecipes.map(recipe => (
       <div key={recipe.id} className="recipe-card">
         <a href={recipe.sourceUrl} target="_blank">
@@ -73,6 +89,7 @@ function HomePage() {
       </div>
     ))}
   </div>
+</div>
   <Link to="/Search">
     <h5 className="Scroll-Footer">
       Already Know what to make? Click here
