@@ -34,6 +34,7 @@ nav {
     height: auto;
     width: 8rem;
     margin-bottom: -1rem;
+    margin-top: 24px;
 }
 
 
@@ -51,6 +52,6 @@ nav {
 .Footer{
     border-top: 1px solid;
     border-color: rgba(152,152,152,0.5);
-    margin-top: 5rem;
+    margin-top: 15rem;
     color: rgba(152,152,152,0.5);
 }

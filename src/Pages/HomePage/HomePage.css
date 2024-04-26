@@ -7,17 +7,13 @@
 
 .Welcome-page{
     height: 100vh;
+    overflow-x: hidden;
 }
 
-.scrolling-recipes{
-    background-color: #111111;
-    border-radius: 25px;
-    width: 975px;
-    height: 1065px;
-}
 
 .TitleCard{
     position: absolute;
+    left: 15rem;
     text-align: left;
     width: 29rem;
 }
@@ -58,18 +54,30 @@
 
 
 /*------------ Scrolling section --------------------*/
-.scrolling-recipes{
-    position: relative;
-    z-index: 1;
-    
 
-}
 .scroll-header{
+    margin-left: 5rem;
+    height: 900px;
+    background-color: black;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 2rem;
     color: #A8A8A8;
+    width: 1050px;
+    overflow-x: hidden;
+}
+
+.scrolling-recipes{
+    position: absolute;
+    border-radius: 25px;
+    left: 29px;
+    top: 60rem;
+    width: 89.7vw;
+    height: 1065px;
+    margin-left: 7rem;
+    overflow-x: hidden;
 }
 
 .scroll-header h1{
@@ -88,11 +96,6 @@
     z-index: 2;
 }
 
-.Scroll-Footer{
-    position: absolute;
-    bottom: 0;
-    right: 23rem;
-}
 
 .recipes-container-right {
     display: flex;
@@ -100,7 +103,7 @@
     margin-top: 5rem;
     position: relative; /* Position the container */
   }
-  
+
   @keyframes scrollRight {
     0% {
       transform: translateX(0); /* Start from initial position */
@@ -112,7 +115,8 @@
   
   .recipes-container-right > div {
     display: flex;
-    animation: scrollRight 21s linear infinite; /* Apply animation to the inner content */
+    animation: scrollRight 21s linear infinite; 
+    /* Apply animation to the inner content */
   }
 
 

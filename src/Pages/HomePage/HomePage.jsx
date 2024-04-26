@@ -60,12 +60,13 @@ function HomePage() {
         <img src={WholePie} alt="right Pie" className="rightSide-img" />
       </div>
 
-      <div className="scrolling-recipes">
-  <div className="scroll-header">
+<div className="scroll-header">
     <h3>Over 1850+ Recipes!</h3>
     <h1>A Recipe for every</h1>
     <h1>Preference and skill level</h1>
-  </div>
+
+</div>
+<div className="scrolling-recipes">
   <div className="recipes-container-right">
   <div>
     {randomRecipes.map(recipe => (
@@ -90,11 +91,7 @@ function HomePage() {
     ))}
   </div>
 </div>
-  <Link to="/Search">
-    <h5 className="Scroll-Footer">
-      Already Know what to make? Click here
-    </h5>
-  </Link>
+
 </div>
       <img src={pieslice} alt="Pie slice" className="LeftsidePie" />
     </>
