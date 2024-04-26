@@ -92,3 +92,47 @@
     bottom: 0;
     right: 23rem;
 }
+
+.recipes-container{
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    margin-top: 5rem;
+}
+
+.recipe-card {
+  background-color:  #A8A8A8;;
+  width: 200px;
+  border: 1px  none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.recipe-card {
+    flex-shrink: 0; /* Prevent the card from shrinking */
+    width: 200px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add margin between recipe cards */
+    overflow: hidden; /* Ensure the image doesn't overflow the card */
+    position: relative; /* Position the cards */
+  }
+
+.recipe-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.recipe-card h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.recipe-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.recipe-card a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit the color from its parent */
+  }
