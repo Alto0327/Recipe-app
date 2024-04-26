@@ -5,6 +5,7 @@ import HomePage from './Pages/HomePage/HomePage'
 import Footer from './Layout/Footer'
 import SearchPage from './Pages/Search Recipie/SearchPage'
 import Results from './Pages/Search Recipie/Results'
+import RecipeInfoPage from './Pages/Search Recipie/RecipeInfoPage'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/Home' element={<HomePage/>} />
         <Route path='/Search' element={<SearchPage/>} />
         <Route path='/results' element={<Results/>} />
+        <Route path="/recipe/:id" element={<RecipeInfoPage />} />
       </Routes>
       <Footer/>
     </div>

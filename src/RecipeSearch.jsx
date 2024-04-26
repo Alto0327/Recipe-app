@@ -11,18 +11,18 @@ function RecipeSearch() {
   };
 
   return (
-    <div>
+    <div className='Search'>
       <form onSubmit={handleSubmit}>
         <label htmlFor="ingredients">Enter ingredients (comma-separated):</label><br />
         <input
-          className='searchBar'
+          className="searchBar"
           type="text"
           id="ingredients"
           name="ingredients"
           value={ingredients}
+          placeholder='Apple, sugar, Flour'
           onChange={(e) => setIngredients(e.target.value)}
         />
-        <button type="submit">Search Recipes</button>
       </form>
     </div>
   );
