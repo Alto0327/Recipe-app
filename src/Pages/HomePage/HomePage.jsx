@@ -11,7 +11,7 @@ function HomePage() {
   useEffect(() => {
     const fetchRandomRecipes = async () => {
       const APIKey = "c9ba34fcefc946049aa88ca8f041ba61";
-      const numberOfRecipes = 10; // Number of random recipes to fetch
+      const numberOfRecipes = 15; // Number of random recipes to fetch
       const url = `https://api.spoonacular.com/recipes/random?number=${numberOfRecipes}&apiKey=${APIKey}`;
 
       try {
