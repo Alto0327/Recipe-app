@@ -50,16 +50,16 @@ function Results() {
 
   return (
     <div>
-      <h1>Results</h1>
-      <ul>
+      <h1 className='SearchHeader'>Here are the Results!</h1>
+      <ul className='recipe-container'>
         {recipes.map(recipe => (
-          <li key={recipe.id}>
-            <img src={recipe.image} alt={recipe.title} style={{ width: '100px', marginRight: '10px' }} />
+          <li key={recipe.id} className='recipe'>
+            <img src={recipe.image} alt={recipe.title} />
             <h2>{recipe.title}</h2>
             <p>Ingredients you have: {recipe.usedIngredientCount}</p>
             <p>Ingredients Missing: {recipe.missedIngredientCount}</p>
             <p>Likes: {recipe.likes}</p>
-            <button onClick={() => handleRecipeClick(recipe.id)}>View Recipe Info</button>
+            <button onClick={() => handleRecipeClick(recipe.id)}>View Recipe</button>
           </li>
         ))}
       </ul>

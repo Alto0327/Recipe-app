@@ -1,0 +1,62 @@
+.recipe-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.SearchHeader{
+    font-size: 48px;
+}
+
+.recipe{
+    background-color: #A8A8A830;
+    margin: 1rem;
+    text-align: center;
+    line-height: 0.5rem;
+    border-radius: 1rem;
+    width: 24rem;
+}
+
+.recipe h2{
+    line-height: normal;
+}
+.recipe img {
+    border-radius: 1rem;
+    margin-top: 0.8rem;
+    border: black solid 0.5px;
+}
+
+.recipe button {
+    width: 5rem;
+    padding: 0.2rem;
+    margin-bottom: 0.8rem;
+}
+
+
+/****************** Recipeinformation ****************? */
+
+.TextArea{
+    display: flex;
+    gap:1rem;
+    background-color: #A8A8A830;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    max-width: 62.5rem;
+}
+
+.Ingredient-section li{
+    text-align: start;
+    list-style-type: disc
+}
+
+.Instruction-section{
+    font-size: 18px;
+}
+
+.Return-button{
+    font-size: 24px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
