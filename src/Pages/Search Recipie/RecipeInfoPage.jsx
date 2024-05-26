@@ -38,6 +38,7 @@ function RecipeInfoPage() {
     <div>
       <h1>{recipeInfo.title}</h1>
       <img src={recipeInfo.image} alt={recipeInfo.title} />
+     <div className='TextArea'>
       <div className="Ingredient-section">
 
       <h2>Ingredients:</h2>
@@ -52,8 +53,9 @@ function RecipeInfoPage() {
       <div className="Instruction-section">
         <h2>Instructions</h2>
         <div dangerouslySetInnerHTML={{ __html: recipeInfo.instructions }} />
-        <button onClick={() => window.history.back()}>Go Back</button>
+        </div> 
       </div>
+        <button onClick={() => window.history.back()} className='Return-button'>Go Back to other Recipes</button>
     </div>
   );
 }
