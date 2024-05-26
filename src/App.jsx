@@ -6,10 +6,12 @@ import Footer from './Layout/Footer'
 import SearchPage from './Pages/Search Recipie/SearchPage'
 import Results from './Pages/Search Recipie/Results'
 import RecipeInfoPage from './Pages/Search Recipie/RecipeInfoPage'
+import ScrollToTop from './Pages/ScrollToTop'
 
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop/>
     <div className="gradient-background">
       <Header/>
       <Routes>
