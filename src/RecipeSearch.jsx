@@ -13,14 +13,14 @@ function RecipeSearch() {
   return (
     <div className='Search'>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="ingredients">Enter ingredients (comma-separated):</label><br />
+        <label htmlFor="ingredients">Enter ingredients with comma-separated:</label><br />
         <input
           className="searchBar"
           type="text"
           id="ingredients"
           name="ingredients"
           value={ingredients}
-          placeholder='Apple, sugar, Flour'
+          placeholder='EX: Apple, sugar, Flour'
           onChange={(e) => setIngredients(e.target.value)}
         />
       </form>

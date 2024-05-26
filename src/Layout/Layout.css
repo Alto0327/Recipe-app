@@ -18,7 +18,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     width: 100px;
-    margin-bottom: 25rem;
+    margin-bottom: 20rem;
 
 }
 
@@ -42,9 +42,6 @@ nav {
     padding-bottom: 24px;
 }
 
-.nav-links li:last-child {
-    padding-bottom: 0px;
-}
 
 
 /*-------------FOOOTER-------------*/
