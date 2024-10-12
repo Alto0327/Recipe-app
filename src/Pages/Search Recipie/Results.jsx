@@ -16,7 +16,7 @@ function Results() {
   }, [location.search]);
 
   const fetchRecipes = async (ingredients) => {
-    const APIKey = "c9ba34fcefc946049aa88ca8f041ba61";
+    const APIKey =import.meta.env.VITE_TEST_VAR;
     const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredients}&apiKey=${APIKey}`;
 
     try {
@@ -27,13 +27,14 @@ function Results() {
       }
       const data = await response.json();
       setRecipes(data);
+      window.history.pushState({}, null, "/")
     } catch (error) {
       console.error('There was a problem with the fetch operation:', error);
     }
   };
 
   const handleRecipeClick = async (id) => {
-    const APIKey = "c9ba34fcefc946049aa88ca8f041ba61";
+    const APIKey = import.meta.env.VITE_TEST_VAR;
     const url = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${APIKey}`;
 
     try {
@@ -44,6 +45,7 @@ function Results() {
       const data = await response.json();
       // Navigate to the recipe information page
       navigate(`/recipe/${id}`, { state: { recipeInfo: data } });
+      window.history.pushState({}, null, "/")
     } catch (error) {
       console.error('There was a problem with the fetch operation:', error);
     }
