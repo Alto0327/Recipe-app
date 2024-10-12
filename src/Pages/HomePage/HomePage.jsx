@@ -10,7 +10,7 @@ function HomePage() {
 
   useEffect(() => {
     const fetchRandomRecipes = async () => {
-      const APIKey = import.meta.env.VITE_TEST_VAR;
+      const APIKey = import.meta.env.VITE_API_VAR;
       const numberOfRecipes = 15; // Number of random recipes to fetch
       const url = `https://api.spoonacular.com/recipes/random?number=${numberOfRecipes}&apiKey=${APIKey}`;
 
@@ -29,7 +29,7 @@ function HomePage() {
     fetchRandomRecipes();
   }, []);
 
-
+// TODO: make the recipe cards into own file
     // Use a utility function to duplicate recipe cards for continuous scrolling
     useEffect(() => {
         const duplicateCards = () => {
@@ -47,7 +47,7 @@ function HomePage() {
     <>
       <div className="Welcome-page">
         <div className="TitleCard">
-          <h1>Cook Like a chef in your own Kicthen</h1>
+          <h1>Cook Like a chef in your own Kitchen</h1>
           <h3>Tell us what's in your fridge and we'll do the rest</h3>
           <div>
             <RecipeSearch />
@@ -59,6 +59,13 @@ function HomePage() {
 
         <img src={WholePie} alt="right Pie" className="rightSide-img" />
       </div>
+
+{/* TODO: connect all elements to the div below while making 
+  the div responsive and the size of the entire web app
+  -center and reposition all values
+  -Open onclick recipe with my link
+  */}
+<div>
 
 <div className="scroll-header">
     <h3>Over 1850+ Recipes!</h3>
@@ -90,8 +97,9 @@ function HomePage() {
       </div>
     ))}
   </div>
-</div>
+  </div>
 
+  </div>
 </div>
       <img src={pieslice} alt="Pie slice" className="LeftsidePie" />
     </>

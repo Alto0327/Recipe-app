@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import "./Search-section.css";
 
+
+//TODO: separate RECIPE INFO PAGE INTO ITS OWN FILE
 function Results() {
   const [recipes, setRecipes] = useState([]);
   const location = useLocation();
@@ -16,7 +18,7 @@ function Results() {
   }, [location.search]);
 
   const fetchRecipes = async (ingredients) => {
-    const APIKey =import.meta.env.VITE_TEST_VAR;
+    const APIKey =import.meta.env.VITE_API_VAR;
     const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredients}&apiKey=${APIKey}`;
 
     try {
@@ -34,7 +36,7 @@ function Results() {
   };
 
   const handleRecipeClick = async (id) => {
-    const APIKey = import.meta.env.VITE_TEST_VAR;
+    const APIKey = import.meta.env.VITE_API_VAR;
     const url = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${APIKey}`;
 
     try {
